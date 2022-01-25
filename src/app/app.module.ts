@@ -18,13 +18,15 @@ import { Router } from '@angular/router';
 import { HttpHeadersInterceptor } from './intercepters/http-headers.intercepter';
 import { HttpErrorsInterceptor } from './intercepters/http-errors.intercepter';
 import { DetailsComponent } from './components/details/details.component';
+import { GameTabsComponent } from './components/game-tabs/game-tabs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SearchBarComponent,
     HomeComponent,
-    DetailsComponent
+    DetailsComponent,
+    GameTabsComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { DetailsComponent } from './components/details/details.component';
     GaugeModule.forRoot(),
     MatSelectModule,
     MatIconModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatTabsModule
   ],
   providers: [
     { 
