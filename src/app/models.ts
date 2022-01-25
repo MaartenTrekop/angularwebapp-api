@@ -1,5 +1,4 @@
 export interface Game {
-    id: string;
     background_image: string;
     name: string;
     released: string;
@@ -18,6 +17,7 @@ export interface Game {
   export interface APIResponse<T> {
       results: Array<T>;
   }
+  
   interface Genre {
     name: string;
   }
@@ -25,7 +25,6 @@ export interface Game {
   interface ParentPlatform {
     platform: {
       name: string;
-      slug: string;
     };
   }
   
@@ -48,3 +47,4 @@ export interface Game {
       max: string;
     };
   }
+  

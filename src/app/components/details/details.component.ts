@@ -1,10 +1,8 @@
-
-   
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { Game } from 'src/app/models';
-import { HttpService } from 'src/app/Services/http.service';
+import { HttpService } from 'src/app/services/http.service';
 
 @Component({
   selector: 'app-details',
@@ -31,7 +29,6 @@ export class DetailsComponent implements OnInit, OnDestroy {
   }
 
   getGameDetails(id: string): void {
-    console.log(id);
     this.gameSub = this.httpService
       .getGameDetails(id)
       .subscribe((gameResp: Game) => {
