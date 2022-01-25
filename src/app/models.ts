@@ -24,6 +24,7 @@ export interface Game {
   interface ParentPlatform {
     platform: {
       name: string;
+      slug: string;
     };
   }
   
